@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: eureka-client
+
+server:
+  port: 8762
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    appname: eureka-client
+
+    
+
+    
+#支持异常fallback  
+feign:
+  hystrix:
+    enabled: true
+    
+    
+    
+info: 
+  aaa:
+    name: ljw
+    age: 30
+  bbb:
+    name: ly
+    age: 30
